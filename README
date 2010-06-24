@@ -18,6 +18,12 @@ Cheers,
 Bob
 
 
+PS: I included also the TopBraid Composer[4]* project files, so you are able to modify the diagram templates, which are stored as graphics
+in the folder 'gfx'.
+
+*) Please note, the diagram/graph modelling is only support in TopBraid Composer Maestro Edition
+
 [1] https://infoserviceonto.wordpress.com/2010/06/23/what-is-an-information-service/
 [2] https://infoserviceonto.wordpress.com/
 [3] http://groups.google.com/group/info-service-ontology-specification-group/
+[4] http://www.topquadrant.com/products/TB_Composer.html
