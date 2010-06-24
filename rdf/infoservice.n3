@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Jun 24 15:01:51 CEST 2010
+# Saved by TopBraid on Thu Jun 24 23:23:52 CEST 2010
 # baseURI: http://purl.org/ontology/infoservice/
 # imports: http://purl.org/dc/elements/1.1/
 # imports: http://www.w3.org/2003/06/sw-vocab-status/ns
@@ -157,7 +157,8 @@ to retrieve more information (descriptions, ratings) about the underlying inform
       rdfs:label "has info service"^^xsd:string ;
       rdfs:range is:InfoService ;
       owl:InverseOf
-              [ rdfs:label "is info service of"^^xsd:string
+              [ rdf:type owl:ObjectProperty ;
+                rdfs:label "is info service of"^^xsd:string
               ] ;
       vs:term_status "unstable"^^xsd:string .
 
@@ -170,7 +171,8 @@ community or mixed, to an is:InfoService instance."""^^xsd:string ;
       rdfs:label "has info service contributor type"^^xsd:string ;
       rdfs:range is:InfoServiceContributorType ;
       owl:InverseOf
-              [ rdfs:label "is info service contributor type of"^^xsd:string
+              [ rdf:type owl:ObjectProperty ;
+                rdfs:label "is info service contributor type of"^^xsd:string
               ] ;
       vs:term_status "testing"^^xsd:string .
 
@@ -183,7 +185,8 @@ to an is:InfoService instance"""^^xsd:string ;
       rdfs:label "has info service quality"^^xsd:string ;
       rdfs:range is:InfoServiceQuality ;
       owl:InverseOf
-              [ rdfs:label "is info service quality of"^^xsd:string
+              [ rdf:type owl:ObjectProperty ;
+                rdfs:label "is info service quality of"^^xsd:string
               ] ;
       vs:term_status "testing"^^xsd:string .
 
@@ -197,7 +200,8 @@ is:InfoService instance could be for example of the information service type 'so
       rdfs:label "has info service type"^^xsd:string ;
       rdfs:range is:InfoServiceType ;
       owl:InverseOf
-              [ rdfs:label "is info service type of"^^xsd:string
+              [ rdf:type owl:ObjectProperty ;
+                rdfs:label "is info service type of"^^xsd:string
               ] ;
       vs:term_status "testing"^^xsd:string .
 
@@ -223,7 +227,8 @@ is:main_subject
       rdfs:label "main subject"^^xsd:string ;
       rdfs:subPropertyOf dcterms:subject ;
       owl:InverseOf
-              [ rdfs:label "is main subject of"^^xsd:string
+              [ a rdf:Property ;
+              	rdfs:label "is main subject of"^^xsd:string
               ] ;
       vs:term_status "testing"^^xsd:string .
 

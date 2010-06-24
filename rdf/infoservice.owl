@@ -140,9 +140,9 @@ to retrieve more information (descriptions, ratings) about the underlying inform
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has info service</rdfs:label>
     <rdfs:range rdf:resource="http://purl.org/ontology/infoservice/InfoService"/>
     <owl:InverseOf>
-      <rdf:Description>
+      <owl:ObjectProperty>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is info service of</rdfs:label>
-      </rdf:Description>
+      </owl:ObjectProperty>
     </owl:InverseOf>
     <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unstable</vs:term_status>
   </owl:ObjectProperty>
@@ -154,9 +154,9 @@ community or mixed, to an is:InfoService instance.</rdfs:comment>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has info service contributor type</rdfs:label>
     <rdfs:range rdf:resource="http://purl.org/ontology/infoservice/InfoServiceContributorType"/>
     <owl:InverseOf>
-      <rdf:Description>
+      <owl:ObjectProperty>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is info service contributor type of</rdfs:label>
-      </rdf:Description>
+      </owl:ObjectProperty>
     </owl:InverseOf>
     <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</vs:term_status>
   </owl:ObjectProperty>
@@ -168,9 +168,9 @@ to an is:InfoService instance</rdfs:comment>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has info service quality</rdfs:label>
     <rdfs:range rdf:resource="http://purl.org/ontology/infoservice/InfoServiceQuality"/>
     <owl:InverseOf>
-      <rdf:Description>
+      <owl:ObjectProperty>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is info service quality of</rdfs:label>
-      </rdf:Description>
+      </owl:ObjectProperty>
     </owl:InverseOf>
     <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</vs:term_status>
   </owl:ObjectProperty>
@@ -183,9 +183,9 @@ is:InfoService instance could be for example of the information service type 'so
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has info service type</rdfs:label>
     <rdfs:range rdf:resource="http://purl.org/ontology/infoservice/InfoServiceType"/>
     <owl:InverseOf>
-      <rdf:Description>
+      <owl:ObjectProperty>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is info service type of</rdfs:label>
-      </rdf:Description>
+      </owl:ObjectProperty>
     </owl:InverseOf>
     <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</vs:term_status>
   </owl:ObjectProperty>
@@ -208,9 +208,9 @@ computerized collection, organization, and retrieval of knowledge.</dc:descripti
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">main subject</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/subject"/>
     <owl:InverseOf>
-      <rdf:Description>
+      <rdf:Property>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is main subject of</rdfs:label>
-      </rdf:Description>
+      </rdf:Property>
     </owl:InverseOf>
     <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</vs:term_status>
   </rdf:Property>
