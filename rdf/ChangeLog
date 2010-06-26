@@ -1,4 +1,11 @@
 =========================
+Version 0.4.1 (June 2010)
+=========================
+ * MODIFIED: xsd:string typed literals to @en (mainly)
+ * FIXED: minor typo fixes
+ * FIXED: dcterms:subject and is:main_subject categories as URIs and not as strings
+
+=========================
 Version 0.4 (June 2010)
 =========================
  * MODIFIED: is:InfoServiceType to is:InfoServiceContributorType, because this concept address the issue of info service contributor type modelling
