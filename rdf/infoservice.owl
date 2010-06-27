@@ -24,14 +24,7 @@ the Semantic Web. This document contains a RDF description of the Information Se
     <foaf:maker rdf:resource="http://foaf.me/zazi#me"/>
   </owl:Ontology>
   <owl:Class rdf:about="http://purl.org/ontology/infoservice/InfoService">
-    <rdfs:comment xml:lang="en">Short definition: 
-
-	"An Information Service is a service, which provides (serves) data/knowledge/information somehow."
-
-However, this definition is not strong enough to describe the range and domain of an Information Service. Therefore, it is necessary to 
-define the term Information Service in a specific context.
-
-Extended definition:
+    <rdfs:comment xml:lang="en">Extended definition:
 
 	"An Information Service is this part of an Information System that serves data/knowledge/information to customers and collects it 
 	from its contributors, to manage and store it by optionally using administrators."

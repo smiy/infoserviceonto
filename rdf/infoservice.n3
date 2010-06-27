@@ -1,4 +1,4 @@
-# Saved by TopBraid on Sun Jun 27 12:33:57 CEST 2010
+# Saved by TopBraid on Sun Jun 27 20:47:54 CEST 2010
 # baseURI: http://purl.org/ontology/infoservice/
 # imports: http://purl.org/dc/elements/1.1/
 # imports: http://www.w3.org/2003/06/sw-vocab-status/ns
@@ -28,14 +28,7 @@ the Semantic Web. This document contains a RDF description of the Information Se
 
 is:InfoService
       rdf:type owl:Class ;
-      rdfs:comment """Short definition: 
-
-	\"An Information Service is a service, which provides (serves) data/knowledge/information somehow.\"
-
-However, this definition is not strong enough to describe the range and domain of an Information Service. Therefore, it is necessary to 
-define the term Information Service in a specific context.
-
-Extended definition:
+      rdfs:comment """Extended definition:
 
 	\"An Information Service is this part of an Information System that serves data/knowledge/information to customers and collects it 
 	from its contributors, to manage and store it by optionally using administrators.\"
