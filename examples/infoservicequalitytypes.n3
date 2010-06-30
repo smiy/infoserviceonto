@@ -1,0 +1,58 @@
+# Saved by TopBraid on Wed Jun 30 16:49:03 CEST 2010
+# baseURI: http://purl.org/ontology/is/quality/infoservicequalitytypes.n3
+# imports: http://purl.org/ontology/bibo/
+# imports: http://purl.org/dc/elements/1.1/
+
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix is:      <http://purl.org/ontology/is/core#> .
+@prefix isq:     <http://purl.org/ontology/is/quality/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+isq:bad
+      rdf:type is:InfoServiceQuality ;
+      rdfs:isDefinedBy isq: ;
+      dc:description "This is currently the third worst quality level from the information service quality scale."@en ;
+      dc:title "bad"@en .
+
+isq:good
+      rdf:type is:InfoServiceQuality ;
+      rdfs:isDefinedBy isq: ;
+      dc:description "This is currently the second best quality level from the information service quality scale."@en ;
+      dc:title "good"@en .
+
+<http://purl.org/ontology/is/quality/infoservicequalitytypes.n3>
+      rdf:type bibo:Document ;
+      dc:creator <http://foaf.me/zazi#me> ;
+      dc:date "2010-06-30T15:44:52+01:00"^^xsd:dateTime ;
+      dc:description """This document includes currently some is:InfoServiceQuality individuals (types) 
+for proof-of-concept demonstration."""@en ;
+      dc:title "Information Service Quality Types"^^xsd:string ;
+      owl:imports dc: , bibo: .
+
+isq:middle
+      rdf:type is:InfoServiceQuality ;
+      rdfs:isDefinedBy isq: ;
+      dc:description "This is currently the third best quality level from the information service quality scale."@en ;
+      dc:title "middle"@en .
+
+isq:useless
+      rdf:type is:InfoServiceQuality ;
+      rdfs:isDefinedBy isq: ;
+      dc:description "This is currently the worst quality level from the information service quality scale."@en ;
+      dc:title "useless"@en .
+
+isq:very_bad
+      rdf:type is:InfoServiceQuality ;
+      rdfs:isDefinedBy isq: ;
+      dc:description "This is currently the second worst quality level from the info service quality scale."@en ;
+      dc:title "very bad"@en .
+
+isq:very_good
+      rdf:type is:InfoServiceQuality ;
+      rdfs:isDefinedBy isq: ;
+      dc:description "This is currently the best quality level from the information service quality scale."@en ;
+      dc:title "very good"@en .
