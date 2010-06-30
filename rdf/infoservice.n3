@@ -17,13 +17,13 @@
 
 is:   rdf:type owl:Ontology ;
       dc:creator <http://foaf.me/zazi#me> ;
-      dc:date "2010-06-30T12:41:52+01:00"^^xsd:dateTime ;
+      dc:date "2010-06-30T18:57:52+01:00"^^xsd:dateTime ;
       dc:description """The Information Service Ontology Specification provides basic concepts and properties 
 for describing different information services, e.g. Wikipedia, MusicBrainz, Freebase or Discogs, on/ for 
 the Semantic Web. This document contains a RDF description of the Information Service Ontology."""@en ;
       dc:title "The Information Service Ontology" ;
       owl:imports <http://www.w3.org/2003/06/sw-vocab-status/ns> , dcterms: , foaf: , dc: ;
-      owl:versionInfo "Revision: 0.5"@en .
+      owl:versionInfo "Revision: 0.5.1"@en .
 
 is:InfoService
       rdf:type owl:Class ;
@@ -89,7 +89,7 @@ to retrieve more information (descriptions, ratings) about the underlying inform
       rdfs:isDefinedBy is: ;
       rdfs:label "has info service"@en ;
       rdfs:range is:InfoService ;
-      owl:InverseOf
+      owl:inverseOf
               [ rdf:type owl:ObjectProperty ;
                 rdfs:label "is info service of"@en
               ] ;
@@ -103,7 +103,7 @@ community or mixed, to an is:InfoService instance."""@en ;
       rdfs:isDefinedBy is: ;
       rdfs:label "has info service contributor type"@en ;
       rdfs:range is:InfoServiceContributorType ;
-      owl:InverseOf
+      owl:inverseOf
               [ rdf:type owl:ObjectProperty ;
                 rdfs:label "is info service contributor type of"@en
               ] ;
@@ -117,7 +117,7 @@ to an is:InfoService instance"""@en ;
       rdfs:isDefinedBy is: ;
       rdfs:label "has info service quality"@en ;
       rdfs:range is:InfoServiceQuality ;
-      owl:InverseOf
+      owl:inverseOf
               [ rdf:type owl:ObjectProperty ;
                 rdfs:label "is info service quality of"@en
               ] ;
@@ -132,7 +132,7 @@ is:InfoService instance could be for example of the information service type 'so
       rdfs:isDefinedBy is: ;
       rdfs:label "has info service type"@en ;
       rdfs:range is:InfoServiceType ;
-      owl:InverseOf
+      owl:inverseOf
               [ rdf:type owl:ObjectProperty ;
                 rdfs:label "is info service type of"@en
               ] ;
@@ -146,7 +146,7 @@ info service address mainly this concern."""@en ;
       rdfs:isDefinedBy is: ;
       rdfs:label "main subject"@en ;
       rdfs:subPropertyOf dcterms:subject ;
-      owl:InverseOf
+      owl:inverseOf
               [ rdf:type owl:ObjectProperty ;
                 rdfs:label "is main subject of"@en
               ] ;

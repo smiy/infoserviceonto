@@ -1,4 +1,9 @@
 =========================
+Version 0.5.1 (June 2010)
+=========================
+ * FIXED: bad typo of owl:inverseOf
+ 
+=========================
 Version 0.5 (June 2010)
 =========================
  * MODIFIED: removed domain restriction from is:info_service
