@@ -17,14 +17,14 @@
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 is:   rdf:type owl:Ontology ;
-      dc:date "$Date: 2010/06/26 15:57:19 $"^^xsd:string ;
+      dc:date "2010-06-30T12:38:52+01:00"^^xsd:dateTime ;
       dc:description """The Information Service Ontology Specification provides basic concepts and properties 
 for describing different information services, e.g. Wikipedia, MusicBrainz, Freebase or Discogs, on/ for 
 the Semantic Web. This document contains a RDF description of the Information Service Ontology."""@en ;
       dc:title "The Information Service Ontology" ;
       owl:imports foaf: , <http://www.w3.org/2003/06/sw-vocab-status/ns> , dcterms: , dc: ;
-      owl:versionInfo "Revision: 0.4.1"@en ;
-      foaf:maker <http://foaf.me/zazi#me> .
+      owl:versionInfo "Revision: 0.4.2"@en ;
+      dc:creator <http://foaf.me/zazi#me> .
 
 is:InfoService
       rdf:type owl:Class ;

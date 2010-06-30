@@ -11,7 +11,8 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
   <owl:Ontology rdf:about="http://purl.org/ontology/infoservice/">
-    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$Date: 2010/06/26 15:57:19 $</dc:date>
+    <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-30T12:38:52+01:00</dc:date>
     <dc:description xml:lang="en">The Information Service Ontology Specification provides basic concepts and properties 
 for describing different information services, e.g. Wikipedia, MusicBrainz, Freebase or Discogs, on/ for 
 the Semantic Web. This document contains a RDF description of the Information Service Ontology.</dc:description>
@@ -20,8 +21,7 @@ the Semantic Web. This document contains a RDF description of the Information Se
     <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
     <owl:imports rdf:resource="http://www.w3.org/2003/06/sw-vocab-status/ns"/>
     <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
-    <owl:versionInfo xml:lang="en">Revision: 0.4.1</owl:versionInfo>
-    <foaf:maker rdf:resource="http://foaf.me/zazi#me"/>
+    <owl:versionInfo xml:lang="en">Revision: 0.4.2</owl:versionInfo>
   </owl:Ontology>
   <owl:Class rdf:about="http://purl.org/ontology/infoservice/InfoService">
     <rdfs:comment xml:lang="en">Extended definition:

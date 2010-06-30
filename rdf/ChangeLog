@@ -1,4 +1,10 @@
 =========================
+Version 0.4.2 (June 2010)
+=========================
+ * MODIFIED: dc:date uses now xsd:dateTime as datatype
+ * MODFIED: foaf:maker to dc:creator
+
+=========================
 Version 0.4.1 (June 2010)
 =========================
  * MODIFIED: xsd:string typed literals to @en (mainly)
