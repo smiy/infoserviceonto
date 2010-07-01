@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ist="http://purl.org/ontology/is/types/"
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:is="http://purl.org/ontology/is/core#"
+  xml:base="http://purl.org/ontology/is/types/">
+  <bibo:Document rdf:about="http://purl.org/ontology/is/types/infoservicetypes.rdf">
+    <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
+    <dc:title xml:lang="en">Information Service Types</dc:title>
+    <dc:description xml:lang="en">This document includes currently some is:InfoServiceType individuals for proof-of-concept
+demonstration.</dc:description>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2010-06-30T15:20:52+01:00</dc:date>
+  </bibo:Document>
+  <is:InfoServiceType rdf:about="http://purl.org/ontology/is/types/social_network_service">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/types/"/>
+    <dc:title xml:lang="en">social network service</dc:title>
+    <dc:description xml:lang="en">A social network service focuses on building and reflecting of social networks or social relations 
+among people, e.g., who share interests and/or activities. A social network service essentially consists of a representation 
+of each user (often a profile), his/her social links, and a variety of additional services.</dc:description>
+  </is:InfoServiceType>
+  <is:InfoServiceType rdf:about="http://purl.org/ontology/is/types/recommender_service">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/types/"/>
+    <dc:title xml:lang="en">recommender service</dc:title>
+    <dc:description xml:lang="en">A recommender service forms or works from a specific type of information filtering system technique 
+that attempts to recommend information items (films, television, video on demand, music, books, news, images, web pages, etc) 
+that are likely to be of interest to the user.</dc:description>
+  </is:InfoServiceType>
+  <is:InfoServiceType rdf:about="http://purl.org/ontology/is/types/encyclopedia">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/types/"/>
+    <dcterms:subject rdf:resource="category:Encyclopedias"/>
+    <dc:title xml:lang="en">encyclopedia</dc:title>
+    <dc:description xml:lang="en">An encyclopedia is a type of reference work, a compendium holding information from either all branches of 
+knowledge or a particular branch of knowledge.</dc:description>
+  </is:InfoServiceType>
+  <is:InfoServiceType rdf:about="http://purl.org/ontology/is/types/knowledge_base">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/types/"/>
+    <dc:title xml:lang="en">knowledge base</dc:title>
+    <dc:description xml:lang="en">A knowledge base is a special kind of database for knowledge management, providing the means for the 
+computerized collection, organization, and retrieval of knowledge.</dc:description>
+  </is:InfoServiceType>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->
