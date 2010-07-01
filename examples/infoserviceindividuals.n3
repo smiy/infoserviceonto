@@ -1,7 +1,8 @@
-# Saved by TopBraid on Wed Jun 30 16:14:53 CEST 2010
+# Saved by TopBraid on Thu Jul 01 12:03:20 CEST 2010
 # baseURI: http://purl.org/ontology/is/inst/infoserviceindividuals.n3
 # imports: http://purl.org/ontology/bibo/
 # imports: http://purl.org/dc/elements/1.1/
+# imports: http://purl.org/ontology/is/core
 # imports: http://xmlns.com/foaf/0.1/
 # imports: http://purl.org/dc/terms/
 
@@ -16,6 +17,15 @@
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+isi:infoserviceindividuals.n3
+      rdf:type bibo:Document  ;
+      dc:creator <http://foaf.me/zazi#me> ;
+      dc:date "2010-06-30T14:56:52+01:00"^^xsd:dateTime ;
+      dc:description """This document includes currently some is:InfoService individuals for proof-of-concept
+demonstration."""@en ;
+      dc:title "Information Service Individuals"@en ;
+      owl:imports dcterms: , foaf: , <http://purl.org/ontology/is/core> , dc: , bibo: .
 
 isi:bbc
       rdf:type is:InfoService ;
@@ -47,15 +57,6 @@ isi:freebase
 service."""@en ;
       dc:title "Freebase"^^xsd:string ;
       foaf:homepage <http://www.freebase.com/> .
-
-isi:infoserviceindividuals.n3
-      rdf:type bibo:Document ;
-      dc:creator <http://foaf.me/zazi#me> ;
-      dc:date "2010-06-30T14:56:52+01:00"^^xsd:dateTime ;
-      dc:description """This document includes currently some is:InfoService individuals for proof-of-concept
-demonstration."""@en ;
-      dc:title "Information Service Individuals" ;
-      owl:imports dc: , foaf: , dcterms: , bibo: .
 
 isi:lastfm
       rdf:type is:InfoService ;
