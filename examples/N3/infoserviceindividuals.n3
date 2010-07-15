@@ -20,7 +20,8 @@
       dc:date "2010-06-30T14:56:52+01:00"^^xsd:dateTime ;
       dc:description """This document includes currently some is:InfoService individuals for proof-of-concept
 demonstration."""@en ;
-      dc:title "Information Service Individuals"@en .
+      dc:title "Information Service Individuals"@en ;
+      rdfs:seeAlso <http://purl.org/ontology/is/infoservice.html> .
 
 isi:bbc
       rdf:type is:InfoService ;

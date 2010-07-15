@@ -66,6 +66,7 @@ demonstration.</dc:description>
     <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
     >2010-06-30T14:56:52+01:00</dc:date>
     <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
+    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/is/infoservice.html" /> 
   </bibo:Document>
   <is:InfoService rdf:about="http://purl.org/ontology/is/inst/freebase">
     <foaf:homepage rdf:resource="http://freebase.com/"/>

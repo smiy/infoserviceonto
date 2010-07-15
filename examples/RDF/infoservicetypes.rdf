@@ -17,6 +17,7 @@
 demonstration.</dc:description>
     <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
     >2010-06-30T15:20:52+01:00</dc:date>
+    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/is/infoservice.html" /> 
   </bibo:Document>
   <is:InfoServiceType rdf:about="http://purl.org/ontology/is/types/social_network_service">
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/types/"/>

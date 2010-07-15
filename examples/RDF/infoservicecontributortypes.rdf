@@ -20,6 +20,7 @@ proof-of-concept demonstration.</dc:description>
     <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
     >2010-06-30T15:37:52+01:00</dc:date>
     <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
+    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/is/infoservice.html" /> 
   </bibo:Document>
   <is:InfoServiceContributorType rdf:about="http://purl.org/ontology/is/ctypes/expert">
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/ctypes/"/>

@@ -17,7 +17,8 @@
       dc:date "2010-06-30T15:20:52+01:00"^^xsd:dateTime ;
       dc:description """This document includes currently some is:InfoServiceType individuals for proof-of-concept
 demonstration."""@en ;
-      dc:title "Information Service Types"@en .
+      dc:title "Information Service Types"@en ;
+      rdfs:seeAlso <http://purl.org/ontology/is/infoservice.html> .
 
 ist:encyclopedia
       rdf:type is:InfoServiceType ;

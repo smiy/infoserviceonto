@@ -15,7 +15,8 @@
       dc:date "2010-06-30T15:44:52+01:00"^^xsd:dateTime ;
       dc:description """This document includes currently some is:InfoServiceQuality individuals (types) 
 for proof-of-concept demonstration."""@en ;
-      dc:title "Information Service Quality Types"@en .
+      dc:title "Information Service Quality Types"@en ;
+      rdfs:seeAlso <http://purl.org/ontology/is/infoservice.html> .
 
 isq:bad
       rdf:type is:InfoServiceQuality ;
