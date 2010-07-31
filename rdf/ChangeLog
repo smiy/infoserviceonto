@@ -1,4 +1,10 @@
 =========================
+Version 0.7 (July 2010)
+=========================
+ * MODIFIED: is:InfoService - added dcterms:Agent as super class 
+ * MODIFIED: is:info_service - added dcterms:publisher as super property
+ 
+=========================
 Version 0.6 (July 2010)
 =========================
  * MODIFIED: all concepts now also with rdfs:Class typed
