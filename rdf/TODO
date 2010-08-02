@@ -1,3 +1,5 @@
 - enable multiple info service quality ratings, e.g. by using http://purl.org/stuff/rev#
 - create a reference implementation of an Info Service Quality Ontology based on 
   http://w3.cyu.edu.tw/ccwei/PAPER/ERP/data%20quality%28JMIS%29.pdf
+- add is:preferred_info_service with a domain of foaf:Agent to enable users a to set their preferred information services,
+5 maybe also with a ranking system (Weighted Interest Ontology?)
