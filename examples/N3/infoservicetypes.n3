@@ -1,24 +1,17 @@
-# Saved by TopBraid on Thu Jul 01 12:09:26 CEST 2010
+# Saved by TopBraid on Thu Oct 28 16:47:09 CEST 2010
 # baseURI: http://purl.org/ontology/is/types/
 
 @prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix category:  <http://dbpedia.org/resource/Category:> .
 @prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix is:      <http://purl.org/ontology/is/core#> .
+@prefix isi:     <http://purl.org/ontology/is/inst/> .
 @prefix ist:     <http://purl.org/ontology/is/types/> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-
-<http://purl.org/ontology/is/types/infoservicetypes.n3>
-      rdf:type bibo:Document ;
-      dc:creator <http://foaf.me/zazi#me> ;
-      dc:date "2010-06-30T15:20:52+01:00"^^xsd:dateTime ;
-      dc:description """This document includes currently some is:InfoServiceType individuals for proof-of-concept
-demonstration."""@en ;
-      dc:title "Information Service Types"@en ;
-      rdfs:seeAlso <http://purl.org/ontology/is/infoservice.html> .
 
 ist:encyclopedia
       rdf:type is:InfoServiceType ;
@@ -26,7 +19,16 @@ ist:encyclopedia
       dc:description """An encyclopedia is a type of reference work, a compendium holding information from either all branches of 
 knowledge or a particular branch of knowledge."""@en ;
       dc:title "encyclopedia"@en ;
-      dcterms:subject <category:Encyclopedias> .
+      dcterms:subject <http://dbpedia.org/resource/Category:Encyclopedias> .
+
+<http://purl.org/ontology/is/types/infoservicetypes.n3>
+      rdf:type bibo:Document ;
+      rdfs:seeAlso <http://purl.org/ontology/is/infoservice.html> ;
+      dc:creator <http://foaf.me/zazi#me> ;
+      dc:date "2010-06-30T15:20:52+01:00"^^xsd:dateTime ;
+      dc:description """This document includes currently some is:InfoServiceType individuals for proof-of-concept
+demonstration."""@en ;
+      dc:title "Information Service Types"@en .
 
 ist:knowledge_base
       rdf:type is:InfoServiceType ;
@@ -50,3 +52,6 @@ ist:social_network_service
 among people, e.g., who share interests and/or activities. A social network service essentially consists of a representation 
 of each user (often a profile), his/her social links, and a variety of additional services."""@en ;
       dc:title "social network service"@en .
+      
+category:Encyclopedias
+      is:info_service isi:dbpedia .

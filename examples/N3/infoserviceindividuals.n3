@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Jul 01 12:03:20 CEST 2010
+# Saved by TopBraid on Thu Oct 28 17:03:40 CEST 2010
 # baseURI: http://purl.org/ontology/is/inst/
 
 @prefix bibo:    <http://purl.org/ontology/bibo/> .
@@ -6,29 +6,33 @@
 @prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix is:      <http://purl.org/ontology/is/core#> .
-@prefix ist:     <http://purl.org/ontology/is/types/> .
-@prefix isct:     <http://purl.org/ontology/is/ctypes/> .
-@prefix isq:     <http://purl.org/ontology/is/quality/> .
+@prefix isct:    <http://purl.org/ontology/is/ctypes/> .
 @prefix isi:     <http://purl.org/ontology/is/inst/> .
+@prefix isq:     <http://purl.org/ontology/is/quality/> .
+@prefix ist:     <http://purl.org/ontology/is/types/> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-
-<http://purl.org/ontology/is/inst/infoserviceindividuals.n3>
-      rdf:type bibo:Document  ;
-      dc:creator <http://foaf.me/zazi#me> ;
-      dc:date "2010-06-30T14:56:52+01:00"^^xsd:dateTime ;
-      dc:description """This document includes currently some is:InfoService individuals for proof-of-concept
-demonstration."""@en ;
-      dc:title "Information Service Individuals"@en ;
-      rdfs:seeAlso <http://purl.org/ontology/is/infoservice.html> .
 
 isi:bbc
       rdf:type is:InfoService ;
       rdfs:isDefinedBy isi: ;
       dc:description "The largest broadcasting organization in the world. Modelled here as information service."@en ;
       dc:title "BBC"^^xsd:string ;
+      is:info_service_type
+              ist:encyclopedia , ist:knowledge_base ;
       foaf:homepage <http://bbc.co.uk/> .
+
+isi:dbpedia
+      rdf:type is:InfoService ;
+      rdfs:isDefinedBy isi: ;
+      dc:description "DBpedia is a community effort to extract structured information from Wikipedia and to make this information available on the Web."@en ;
+      dc:title "DBPedia"^^xsd:string ;
+      is:info_service_contributor_type
+              isct:mixed ;
+      is:info_service_type
+              ist:knowledge_base , ist:encyclopedia ;
+      foaf:homepage <http://dbpedia.org/> .
 
 isi:discogs
       rdf:type is:InfoService ;
@@ -37,6 +41,8 @@ isi:discogs
 of electronic music releases and is believed to be the largest online database of releases on vinyl media. Modelled here as
 information service."""@en ;
       dc:title "Discogs"^^xsd:string ;
+      is:info_service_type
+              ist:knowledge_base , ist:encyclopedia ;
       foaf:homepage <http://discogs.com/> .
 
 isi:echonest
@@ -45,6 +51,8 @@ isi:echonest
       dc:description """The Echo Nest provides a series of web based solutions for better search, recommendation and 
 interactivity on the music web (including musicial fingerprinting). Modelled here as information service."""@en ;
       dc:title "EchoNest"^^xsd:string ;
+      is:info_service_type
+              ist:recommender_service , ist:knowledge_base ;
       foaf:homepage <http://echonest.com/> .
 
 isi:freebase
@@ -55,11 +63,24 @@ service."""@en ;
       dc:title "Freebase"^^xsd:string ;
       foaf:homepage <http://freebase.com/> .
 
+<http://purl.org/ontology/is/inst/infoserviceindividuals.n3>
+      rdf:type bibo:Document ;
+      rdfs:seeAlso <http://purl.org/ontology/is/infoservice.html> ;
+      dc:creator <http://foaf.me/zazi#me> ;
+      dc:date "2010-06-30T14:56:52+01:00"^^xsd:dateTime ;
+      dc:description """This document includes currently some is:InfoService individuals for proof-of-concept
+demonstration."""@en ;
+      dc:title "Information Service Individuals"@en .
+
 isi:lastfm
       rdf:type is:InfoService ;
       rdfs:isDefinedBy isi: ;
       dc:description "A popular Internet radio site for streaming music. Modelled here as information service."@en ;
       dc:title "Last.fm"^^xsd:string ;
+      is:info_service_contributor_type
+              isct:community ;
+      is:info_service_type
+              ist:social_network_service , ist:recommender_service ;
       foaf:homepage <http://last.fm/> .
 
 isi:musicbrainz
@@ -67,13 +88,7 @@ isi:musicbrainz
       rdfs:isDefinedBy isi: ;
       dc:description "An open content music database. Modelled here as information service."@en ;
       dc:title "MusicBrainz"^^xsd:string ;
-      dcterms:subject <http://dbpedia.org/resource/Category:Metadata_registry> , 
-		      <http://dbpedia.org/resource/Category:Acoustic_fingerprinting> , 
-		      <http://dbpedia.org/resource/Category:MusicBrainz> , 
-		      <http://dbpedia.org/resource/Category:Library_2.0> , 
-		      <http://dbpedia.org/resource/Category:Online_encyclopedias> , 
-		      <http://dbpedia.org/resource/Category:Online_music_and_lyrics_databases> , 
-		      <http://dbpedia.org/resource/Category:Free_websites> ;
+      dcterms:subject <http://dbpedia.org/resource/Category:Online_encyclopedias> , <http://dbpedia.org/resource/Category:Online_music_and_lyrics_databases> , <http://dbpedia.org/resource/Category:MusicBrainz> , <http://dbpedia.org/resource/Category:Library_2.0> , <http://dbpedia.org/resource/Category:Metadata_registry> , <http://dbpedia.org/resource/Category:Free_websites> , <http://dbpedia.org/resource/Category:Acoustic_fingerprinting> ;
       is:info_service_contributor_type
               isct:mixed ;
       is:info_service_quality
@@ -89,6 +104,10 @@ isi:myspace
       dc:description """A social networking website with a great pool of musician profiles. Modelled here as information
 service."""@en ;
       dc:title "MySpace"^^xsd:string ;
+      is:info_service_contributor_type
+              isct:community ;
+      is:info_service_type
+              ist:social_network_service ;
       foaf:homepage <http://myspace.com/> .
 
 isi:pandora
@@ -96,6 +115,10 @@ isi:pandora
       rdfs:isDefinedBy isi: ;
       dc:description "An automated music recommendation service. Modelled here as information service."@en ;
       dc:title "Pandora"^^xsd:string ;
+      is:info_service_contributor_type
+              isct:expert ;
+      is:info_service_type
+              ist:recommender_service ;
       foaf:homepage <http://pandora.com/> .
 
 isi:spotify
@@ -103,6 +126,10 @@ isi:spotify
       rdfs:isDefinedBy isi: ;
       dc:description "A proprietary peer-to-peer music streaming service. Modelled here as information service."@en ;
       dc:title "Spotify"^^xsd:string ;
+      is:info_service_contributor_type
+              isct:expert ;
+      is:info_service_type
+              ist:recommender_service ;
       foaf:homepage <http://spotify.com/> .
 
 isi:wikipedia
@@ -110,4 +137,8 @@ isi:wikipedia
       rdfs:isDefinedBy isi: ;
       dc:description "A free, web-based, collaborative, multilingual encyclopedia project. Modelled here as information service."@en ;
       dc:title "Wikipedia"^^xsd:string ;
+      is:info_service_contributor_type
+              isct:mixed ;
+      is:info_service_type
+              ist:knowledge_base , ist:encyclopedia ;
       foaf:homepage <http://wikipedia.org/> .

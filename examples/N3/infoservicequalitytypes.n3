@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Jul 01 12:07:23 CEST 2010
+# Saved by TopBraid on Thu Oct 28 17:09:26 CEST 2010
 # baseURI: http://purl.org/ontology/is/quality/
 
 @prefix bibo:    <http://purl.org/ontology/bibo/> .
@@ -8,15 +8,6 @@
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-
-<http://purl.org/ontology/is/quality/infoservicequalitytypes.n3>
-      rdf:type bibo:Document ;
-      dc:creator <http://foaf.me/zazi#me> ;
-      dc:date "2010-06-30T15:44:52+01:00"^^xsd:dateTime ;
-      dc:description """This document includes currently some is:InfoServiceQuality individuals (types) 
-for proof-of-concept demonstration."""@en ;
-      dc:title "Information Service Quality Types"@en ;
-      rdfs:seeAlso <http://purl.org/ontology/is/infoservice.html> .
 
 isq:bad
       rdf:type is:InfoServiceQuality ;
@@ -29,6 +20,15 @@ isq:good
       rdfs:isDefinedBy isq: ;
       dc:description "This is currently the second best quality level from the information service quality scale."@en ;
       dc:title "good"@en .
+
+<http://purl.org/ontology/is/quality/infoservicequalitytypes.n3>
+      rdf:type bibo:Document ;
+      rdfs:seeAlso <http://purl.org/ontology/is/infoservice.html> ;
+      dc:creator <http://foaf.me/zazi#me> ;
+      dc:date "2010-06-30T15:44:52+01:00"^^xsd:dateTime ;
+      dc:description """This document includes currently some is:InfoServiceQuality individuals (types) 
+for proof-of-concept demonstration."""@en ;
+      dc:title "Information Service Quality Types"@en .
 
 isq:middle
       rdf:type is:InfoServiceQuality ;

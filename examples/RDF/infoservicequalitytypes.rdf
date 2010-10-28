@@ -1,52 +1,49 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:isq="http://purl.org/ontology/is/quality/"
-    xmlns:bibo="http://purl.org/ontology/bibo/"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:is="http://purl.org/ontology/is/core#"
-  xml:base="http://purl.org/ontology/is/quality/">
-  <is:InfoServiceQuality rdf:about="http://purl.org/ontology/is/quality/very_bad">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/quality/"/>
-    <dc:title xml:lang="en">very bad</dc:title>
-    <dc:description xml:lang="en">This is currently the second worst quality level from the info service quality scale.</dc:description>
-  </is:InfoServiceQuality>
-  <bibo:Document rdf:about="http://purl.org/ontology/is/quality/infoservicequalitytypes.rdf">
-    <dc:title xml:lang="en">Information Service Quality Types</dc:title>
-    <dc:description xml:lang="en">This document includes currently some is:InfoServiceQuality individuals (types) 
-for proof-of-concept demonstration.</dc:description>
-    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2010-06-30T15:44:52+01:00</dc:date>
-    <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
-    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/is/infoservice.html" /> 
-  </bibo:Document>
-  <is:InfoServiceQuality rdf:about="http://purl.org/ontology/is/quality/useless">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/quality/"/>
-    <dc:title xml:lang="en">useless</dc:title>
-    <dc:description xml:lang="en">This is currently the worst quality level from the information service quality scale.</dc:description>
-  </is:InfoServiceQuality>
+   xmlns:bibo="http://purl.org/ontology/bibo/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:is="http://purl.org/ontology/is/core#"
+   xmlns:isq="http://purl.org/ontology/is/quality/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xml:base="http://purl.org/ontology/is/quality/">
   <is:InfoServiceQuality rdf:about="http://purl.org/ontology/is/quality/bad">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/quality/"/>
-    <dc:title xml:lang="en">bad</dc:title>
     <dc:description xml:lang="en">This is currently the third worst quality level from the information service quality scale.</dc:description>
-  </is:InfoServiceQuality>
-  <is:InfoServiceQuality rdf:about="http://purl.org/ontology/is/quality/very_good">
+    <dc:title xml:lang="en">bad</dc:title>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/quality/"/>
-    <dc:title xml:lang="en">very good</dc:title>
-    <dc:description xml:lang="en">This is currently the best quality level from the information service quality scale.</dc:description>
-  </is:InfoServiceQuality>
-  <is:InfoServiceQuality rdf:about="http://purl.org/ontology/is/quality/middle">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/quality/"/>
-    <dc:title xml:lang="en">middle</dc:title>
-    <dc:description xml:lang="en">This is currently the third best quality level from the information service quality scale.</dc:description>
   </is:InfoServiceQuality>
   <is:InfoServiceQuality rdf:about="http://purl.org/ontology/is/quality/good">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/quality/"/>
-    <dc:title xml:lang="en">good</dc:title>
     <dc:description xml:lang="en">This is currently the second best quality level from the information service quality scale.</dc:description>
+    <dc:title xml:lang="en">good</dc:title>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/quality/"/>
+  </is:InfoServiceQuality>
+  <bibo:Document rdf:about="http://purl.org/ontology/is/quality/infoservicequalitytypes.rdf">
+    <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-30T15:44:52+01:00</dc:date>
+    <dc:description xml:lang="en">This document includes currently some is:InfoServiceQuality individuals (types) 
+for proof-of-concept demonstration.</dc:description>
+    <dc:title xml:lang="en">Information Service Quality Types</dc:title>
+    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/is/infoservice.html"/>
+  </bibo:Document>
+  <is:InfoServiceQuality rdf:about="http://purl.org/ontology/is/quality/middle">
+    <dc:description xml:lang="en">This is currently the third best quality level from the information service quality scale.</dc:description>
+    <dc:title xml:lang="en">middle</dc:title>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/quality/"/>
+  </is:InfoServiceQuality>
+  <is:InfoServiceQuality rdf:about="http://purl.org/ontology/is/quality/useless">
+    <dc:description xml:lang="en">This is currently the worst quality level from the information service quality scale.</dc:description>
+    <dc:title xml:lang="en">useless</dc:title>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/quality/"/>
+  </is:InfoServiceQuality>
+  <is:InfoServiceQuality rdf:about="http://purl.org/ontology/is/quality/very_bad">
+    <dc:description xml:lang="en">This is currently the second worst quality level from the info service quality scale.</dc:description>
+    <dc:title xml:lang="en">very bad</dc:title>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/quality/"/>
+  </is:InfoServiceQuality>
+  <is:InfoServiceQuality rdf:about="http://purl.org/ontology/is/quality/very_good">
+    <dc:description xml:lang="en">This is currently the best quality level from the information service quality scale.</dc:description>
+    <dc:title xml:lang="en">very good</dc:title>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/quality/"/>
   </is:InfoServiceQuality>
 </rdf:RDF>
-
-<!-- Created with TopBraid -->

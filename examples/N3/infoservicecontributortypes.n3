@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Jul 01 12:05:30 CEST 2010
+# Saved by TopBraid on Thu Oct 28 17:10:14 CEST 2010
 # baseURI: http://purl.org/ontology/is/ctypes/
 
 @prefix bibo:    <http://purl.org/ontology/bibo/> .
@@ -8,16 +8,6 @@
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-
-<http://purl.org/ontology/is/ctypes/infoservicecontributortypes.n3>
-      rdf:type bibo:Document ;
-      dc:creator <http://foaf.me/zazi#me> ;
-      dc:date "2010-06-30T15:37:52+01:00"^^xsd:dateTime ;
-      dc:description """This document includes currently some is:InfoServiceContributorType individuals for 
-proof-of-concept demonstration."""@en ;
-      dc:title "Information Service Contributor Types"@en ;
-      rdfs:seeAlso <http://purl.org/ontology/is/infoservice.html> .
-
 
 isct:community
       rdf:type is:InfoServiceContributorType ;
@@ -30,6 +20,15 @@ isct:expert
       rdfs:isDefinedBy isct: ;
       dc:description "This is the information service type for expert driven information services."@en ;
       dc:title "expert"@en .
+
+<http://purl.org/ontology/is/ctypes/infoservicecontributortypes.n3>
+      rdf:type bibo:Document ;
+      rdfs:seeAlso <http://purl.org/ontology/is/infoservice.html> ;
+      dc:creator <http://foaf.me/zazi#me> ;
+      dc:date "2010-06-30T15:37:52+01:00"^^xsd:dateTime ;
+      dc:description """This document includes currently some is:InfoServiceContributorType individuals for 
+proof-of-concept demonstration."""@en ;
+      dc:title "Information Service Contributor Types"@en .
 
 isct:mixed
       rdf:type is:InfoServiceContributorType ;

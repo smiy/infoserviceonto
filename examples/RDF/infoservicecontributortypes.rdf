@@ -1,38 +1,35 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:bibo="http://purl.org/ontology/bibo/"
-    xmlns:isct="http://purl.org/ontology/is/ctypes/"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:is="http://purl.org/ontology/is/core#"
-  xml:base="http://purl.org/ontology/is/ctypes/">
+   xmlns:bibo="http://purl.org/ontology/bibo/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:is="http://purl.org/ontology/is/core#"
+   xmlns:isct="http://purl.org/ontology/is/ctypes/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xml:base="http://purl.org/ontology/is/ctypes/">
   <is:InfoServiceContributorType rdf:about="http://purl.org/ontology/is/ctypes/community">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/ctypes/"/>
-    <dc:title xml:lang="en">community</dc:title>
     <dc:description xml:lang="en">This is the information service type for community driven information services.</dc:description>
+    <dc:title xml:lang="en">community</dc:title>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/ctypes/"/>
+  </is:InfoServiceContributorType>
+  <is:InfoServiceContributorType rdf:about="http://purl.org/ontology/is/ctypes/expert">
+    <dc:description xml:lang="en">This is the information service type for expert driven information services.</dc:description>
+    <dc:title xml:lang="en">expert</dc:title>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/ctypes/"/>
   </is:InfoServiceContributorType>
   <bibo:Document rdf:about="http://purl.org/ontology/is/ctypes/infoservicecontributortypes.rdf">
-    <dc:title xml:lang="en">Information Service Contributor Types</dc:title>
+    <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-30T15:37:52+01:00</dc:date>
     <dc:description xml:lang="en">This document includes currently some is:InfoServiceContributorType individuals for 
 proof-of-concept demonstration.</dc:description>
-    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2010-06-30T15:37:52+01:00</dc:date>
-    <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
-    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/is/infoservice.html" /> 
+    <dc:title xml:lang="en">Information Service Contributor Types</dc:title>
+    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/is/infoservice.html"/>
   </bibo:Document>
-  <is:InfoServiceContributorType rdf:about="http://purl.org/ontology/is/ctypes/expert">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/ctypes/"/>
-    <dc:title xml:lang="en">expert</dc:title>
-    <dc:description xml:lang="en">This is the information service type for expert driven information services.</dc:description>
-  </is:InfoServiceContributorType>
   <is:InfoServiceContributorType rdf:about="http://purl.org/ontology/is/ctypes/mixed">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/ctypes/"/>
-    <dc:title xml:lang="en">mixed</dc:title>
     <dc:description xml:lang="en">This is the information service type, where both parties - experts and a user community - share 
 their knowledge to that information service.</dc:description>
+    <dc:title xml:lang="en">mixed</dc:title>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/is/ctypes/"/>
   </is:InfoServiceContributorType>
 </rdf:RDF>
-
-<!-- Created with TopBraid -->
